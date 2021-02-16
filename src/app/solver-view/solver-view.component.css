@@ -1,0 +1,24 @@
+/* div {
+    border: 5px red solid;
+} */
+
+.solverView {
+    width: 100%;
+}
+
+.generateControls{
+    /* background-color: green; */
+    width:20%;
+    float: left;
+}
+
+.gridView {
+    /* background-color: violet; */
+    width: 60%;
+    float: left;
+}
+.showSolutiondView {
+    /* background-color: orange; */
+    width: 20%;
+    float: right;
+}

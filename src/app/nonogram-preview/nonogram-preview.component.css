@@ -1,0 +1,29 @@
+
+.gridContainer {
+    /* width: 200px;
+    height: 200px; */
+    /* border-style: double; */
+    overflow: scroll;
+}
+mat-grid-tile {
+    background: white;
+    border-top: rgb(228, 228, 228) solid 1px;
+    border-left: rgb(219, 219, 219) solid 1px;
+    /* border-radius: 10%; */
+}
+mat-grid-tile.filled {
+    background-color: rgb(112, 112, 112);
+    border-top: rgb(100, 100, 100) solid 1px;
+    border-left: rgb(100,100,100) solid 1px;
+    border-radius: 10%;
+}
+mat-grid-tile.distinctRow {
+    /* border-top: 4px solid rgb(0, 0, 0); */
+    /* background-color: rgb(226, 226, 226); */
+    border-top: black solid 1px;
+}
+mat-grid-tile.distinctCol {
+    /* border-top: 4px solid rgb(0, 0, 0); */
+    /* background-color: rgb(226, 226, 226); */
+    border-left: black solid 1px;
+}

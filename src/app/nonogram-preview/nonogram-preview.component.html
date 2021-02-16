@@ -1,0 +1,21 @@
+<!-- <div class="gridContainer">
+    <mat-grid-list cols={{gridWidth()}} rowHeight="1:1">
+        <div *ngFor="let j of [].constructor(gridHeight())">
+            <mat-grid-tile *ngFor="let i of [].constructor(gridWidth())"></mat-grid-tile>
+        </div>
+    </mat-grid-list>
+</div> -->
+<mat-card>
+    <mat-card-content class="gridContainer">
+        <mat-grid-list cols={{gridWidth()}} rowHeight="1:1" gutterSize="0px">
+            <div *ngFor="let row of getGrid(); let j = index">
+                <mat-grid-tile *ngFor="let fill of row; let i = index"
+                    [ngClass]="{'filled': fill==1, 'crossed': fill==2, 'distinctRow': (j%4)==0 && j!=0, 'distinctCol': i%4==0 && i!=0}">
+                </mat-grid-tile>
+            </div>
+        </mat-grid-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>Open in Creator</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,5 @@
+<button mat-raised-button color="primary" (click)="onShow()" *ngIf="!showingSolutions()">Show Solution(s)</button>
+<button mat-raised-button color="primary" (click)="onHide()" *ngIf="showingSolutions()">Hide Solution(s)</button>
+<div *ngIf="showingSolutions()" >
+    <app-nonogram-preview *ngFor="let sol of getSolutions()" [solution]="sol"></app-nonogram-preview>
+</div>
